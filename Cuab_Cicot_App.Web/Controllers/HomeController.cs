@@ -33,11 +33,7 @@ namespace Cuab_Cicot_App.Web.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        public IActionResult Home()
-        {
-            return View();
-        }
+                
 
         public IActionResult Registration()
         {
