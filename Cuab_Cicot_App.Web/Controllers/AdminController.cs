@@ -33,10 +33,19 @@ namespace CicotApp.Web.Controllers
             return View();
         }
 
-        public IActionResult ResultMgmt()
+        public IActionResult AddResult()
         {
             return View();
         }
 
+        public IActionResult ResultListings()
+        {
+            return View();
+        }
+
+        public IActionResult ResultDetail()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewData["Title"] = "Result Listings";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="db-breadcrumb">
+        <h4 class="breadcrumb-title">Result Listings</h4>
+        <ul class="db-breadcrumb-list">
+            <li><a href="/Admin/dashboard"><i class="fa fa-home"></i>Home</a></li>
+            <li>Results</li>
+        </ul>
+    </div>
+
+    <table class="mb-0 table table-striped" id="dtAllResult">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Title</th>
+                <th>Department</th>
+                <th>Session</th>
+                <th>Level</th>
+                <th>Semester</th>
+                <th>Lecturer</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CPS 101</td>
+                <td>Object Oriented Programming using C++</td>
+                <td>Computer Science</td>
+                <td>2020/2021</td>
+                <td>400L</td>
+                <td>FIRST</td>
+                <td>M.A Adesina</td>
+                <td><a href="/Admin/ResultDetail" class="btn btn-info">View</a></td>
+            </tr>
+            <tr>
+                <td>CPS 102</td>
+                <td>Human Computer Interface</td>
+                <td>Computer Science</td>
+                <td>2020/2021</td>
+                <td>400L</td>
+                <td>FIRST</td>
+                <td>Adams Ganiyat</td>
+                <td><a href="/Admin/ResultDetail" class="btn btn-info">View</a></td>
+            </tr>
+            <tr>
+                <td>CCC 304</td>
+                <td>Computer Graphics using Adobe Photoshop CS4</td>
+                <td>Computer Science</td>
+                <td>2020/2021</td>
+                <td>400L</td>
+                <td>FIRST</td>
+                <td>Yinka Oduwole</td>
+                <td><a href="/Admin/ResultDetail" class="btn btn-info">View</a></td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+@section scripts
+{
+<script>
+    $(document).ready(function () {
+
+        //$('button').click(function (e) {
+        //    e.preventDefault();
+        //    addProductToList();
+        //});
+
+    });
+</script>
+
+}
